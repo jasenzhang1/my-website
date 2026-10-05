@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jasen Zhang</title>
-  <meta name="description" content="Modular origami and Mathlingo, a repetition-first math learning app.">
+  <meta name="description" content="Jasen Zhang, PhD student in Biostatistics at UCLA working on neural decoding.">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,125 +19,80 @@
   <header id="site-header"></header>
 
   <main>
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Math &middot; Origami &middot; Software</p>
-          <h1>Simple units.<br><span class="accent">Strong structures.</span></h1>
+    <!-- ===== Intro: photo + elevator pitch ===== -->
+    <section class="intro grid-bg">
+      <div class="container intro-inner">
+        <figure class="portrait">
+          <img src="images/pictures/headshot-web.jpg" alt="Portrait of Jasen Zhang" width="800" height="1200">
+        </figure>
+
+        <div>
+          <p class="eyebrow">PhD Student &middot; Biostatistics &middot; UCLA</p>
+          <h1>Hi, I'm Jasen.</h1>
           <p class="lede">
-            I fold modular origami from dozens of identical pieces, and I'm building
-            <strong>Mathlingo</strong>, an app that turns small daily reps into real
-            confidence in math.
+            I'm a PhD student in Biostatistics at UCLA, advised by Dr. Andrew Holbrook.
+            My research is in <strong>neural decoding</strong>: building statistical models
+            that recover what the brain is representing from recorded neural activity.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">See my work <i class="fa-solid fa-arrow-down"></i></a>
-            <a class="btn btn-ghost" href="about.html">About me</a>
+          <ul class="chips" aria-label="Methods">
+            <li class="chip">Stochastic processes</li>
+            <li class="chip">Graphical models</li>
+            <li class="chip">Machine learning</li>
+          </ul>
+          <p class="lede">
+            In my free time I fold <a class="text-link" href="origami.html">origami</a>, and I love
+            to coach and teach. I'm building <a class="text-link" href="https://mathlingo.jasen-zhang-2008.workers.dev/" target="_blank" rel="noopener">Mathlingo</a>,
+            a Duolingo for math and stats. I've also <a class="text-link" href="esports.html">coached League of Legends</a>
+            at UCSD and UCLA, and I play <a class="text-link" href="tennis.html">tennis</a>.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:jasenzhang@g.ucla.edu"><i class="fa-solid fa-envelope"></i> Get in touch</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/jasenzhang/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/jasenzhang1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
-        </div>
-
-        <!-- 16 folded squares that assemble into a diamond, inner ring first -->
-        <div class="hero-art" aria-hidden="true">
-          <span class="tile corner" style="--r:0deg;   --i:12"></span>
-          <span class="tile edge"   style="--r:0deg;   --i:4"></span>
-          <span class="tile edge"   style="--r:90deg;  --i:5"></span>
-          <span class="tile corner" style="--r:90deg;  --i:13"></span>
-
-          <span class="tile edge"   style="--r:0deg;   --i:11"></span>
-          <span class="tile inner"  style="--r:0deg;   --i:0"></span>
-          <span class="tile inner"  style="--r:90deg;  --i:1"></span>
-          <span class="tile edge"   style="--r:90deg;  --i:6"></span>
-
-          <span class="tile edge"   style="--r:270deg; --i:10"></span>
-          <span class="tile inner"  style="--r:270deg; --i:3"></span>
-          <span class="tile inner"  style="--r:180deg; --i:2"></span>
-          <span class="tile edge"   style="--r:180deg; --i:7"></span>
-
-          <span class="tile corner" style="--r:270deg; --i:15"></span>
-          <span class="tile edge"   style="--r:270deg; --i:9"></span>
-          <span class="tile edge"   style="--r:180deg; --i:8"></span>
-          <span class="tile corner" style="--r:180deg; --i:14"></span>
         </div>
       </div>
     </section>
 
-    <!-- ===== Two main things ===== -->
+    <!-- ===== Explore ===== -->
     <section class="section">
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">What I make</p>
-            <h2>Two projects, one idea.</h2>
-            <p>Both start with a small piece you repeat until it becomes something solid.</p>
+            <p class="eyebrow">Beyond research</p>
+            <h2>Small units, repeated well.</h2>
+            <p>Folding, teaching, coaching and competing all come down to the same thing: getting simple pieces right, again and again.</p>
           </div>
         </div>
 
         <div class="feature-grid">
-          <a class="feature" href="#work" data-filter-link=".origami">
+          <a class="feature" href="origami.html">
             <span class="feature-icon"><i class="fa-solid fa-cubes"></i></span>
-            <h3>Modular Origami</h3>
-            <p>
-              Polyhedra and kusudama made from identical folded units, held together only
-              by tension. No glue and no cuts, just geometry.
-            </p>
-            <ul class="chips">
-              <li class="chip">Sonobe</li>
-              <li class="chip">Kusudama</li>
-              <li class="chip">Polyhedra</li>
-            </ul>
-            <div class="feature-foot">
-              <span class="go">Browse the gallery <i class="fa-solid fa-arrow-right"></i></span>
-              <span class="units" aria-hidden="true">
-                <span class="unit on"></span><span class="unit on"></span><span class="unit on"></span>
-                <span class="unit"></span><span class="unit"></span><span class="unit"></span>
-              </span>
-            </div>
+            <h3>Origami</h3>
+            <p>Modular polyhedra and kusudama, built from many identical folded units.</p>
+            <span class="go">See the gallery <i class="fa-solid fa-arrow-right"></i></span>
           </a>
 
-          <a class="feature feature--bold" href="#work" data-filter-link=".apps">
+          <a class="feature feature--bold" href="https://mathlingo.jasen-zhang-2008.workers.dev/" target="_blank" rel="noopener">
             <span class="feature-icon"><i class="fa-solid fa-bolt"></i></span>
             <h3>Mathlingo</h3>
-            <p>
-              Short, focused practice built on spaced repetition. Every rep counts, every
-              streak shows, and confidence builds one problem at a time.
-            </p>
-            <ul class="chips">
-              <li class="chip">Spaced repetition</li>
-              <li class="chip">Daily streaks</li>
-              <li class="chip">Progress tracking</li>
-            </ul>
-            <div class="feature-foot">
-              <span class="go">See the app <i class="fa-solid fa-arrow-right"></i></span>
-              <span class="units" aria-hidden="true">
-                <span class="unit on"></span><span class="unit on"></span><span class="unit on"></span>
-                <span class="unit on"></span><span class="unit on"></span><span class="unit on"></span>
-              </span>
-            </div>
+            <p>A Duolingo for math and stats: short, repeatable practice that builds confidence.</p>
+            <span class="go">Try Mathlingo <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===== Project mosaic (data/cards.json) ===== -->
-    <section class="section work" id="work">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Work</p>
-            <h2>Projects</h2>
-          </div>
-          <div class="filters" role="group" aria-label="Filter projects">
-            <button class="filter-btn is-active" data-filter="*" aria-pressed="true">All</button>
-            <button class="filter-btn" data-filter=".origami" aria-pressed="false">Origami</button>
-            <button class="filter-btn" data-filter=".apps" aria-pressed="false">Apps</button>
-            <button class="filter-btn" data-filter=".other" aria-pressed="false">Other</button>
-          </div>
-        </div>
+          <a class="feature" href="esports.html">
+            <span class="feature-icon"><i class="fa-solid fa-headset"></i></span>
+            <h3>Esports</h3>
+            <p>League of Legends coaching at UCSD and UCLA, and analysis on YouTube.</p>
+            <span class="go">Coaching &amp; videos <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
 
-        <div class="grid">
-          <div class="grid-sizer"></div>
-          <div class="gutter-sizer"></div>
-          <!-- cards are inserted here by js/portfolio.js -->
+          <a class="feature" href="tennis.html">
+            <span class="feature-icon"><i class="fa-solid fa-trophy"></i></span>
+            <h3>Tennis</h3>
+            <p>Match videos and photos from tournaments and with players.</p>
+            <span class="go">Watch &amp; browse <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
         </div>
       </div>
     </section>
@@ -146,10 +101,7 @@
   <!-- FOOTER: built by js/footer.js -->
   <footer id="site-footer"></footer>
 
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
-  <script src="js/portfolio.js"></script>
 </body>
 </html>

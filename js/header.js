@@ -5,13 +5,15 @@
 
   const links = [
     { href: "index.html", label: "Home" },
-    { href: "index.html#work", label: "Work" },
-    { href: "about.html", label: "About" },
+    { href: "origami.html", label: "Origami" },
+    { href: "esports.html", label: "Esports" },
+    { href: "tennis.html", label: "Tennis" },
+    { href: "https://mathlingo.jasen-zhang-2008.workers.dev/", label: "Mathlingo", external: true },
   ];
 
-  // "/about", "/about.html" and "/" all map to a page name
+  // "/origami", "/origami.html" and "/" all map to a page name
   const page = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "");
-  const isActive = (href) => !href.includes("#") && href.replace(/\.html$/, "") === page;
+  const isActive = (l) => !l.external && l.href.replace(/\.html$/, "") === page;
 
   // 2x2 folded-paper tiles pointing inward — the site's mark
   const mark = `
@@ -24,7 +26,13 @@
     </svg>`;
 
   const items = links
-    .map((l) => `<li><a href="${l.href}"${isActive(l.href) ? ' class="active" aria-current="page"' : ""}>${l.label}</a></li>`)
+    .map((l) => {
+      const attrs = l.external
+        ? ' target="_blank" rel="noopener"'
+        : isActive(l) ? ' class="active" aria-current="page"' : "";
+      const icon = l.external ? ' <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7em"></i>' : "";
+      return `<li><a href="${l.href}"${attrs}>${l.label}${icon}</a></li>`;
+    })
     .join("");
 
   const header = document.getElementById("site-header");

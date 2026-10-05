@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Origami · Jasen Zhang</title>
+  <meta name="description" content="Modular origami by Jasen Zhang: polyhedra, kusudama and tessellations.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- HEADER: built by js/header.js -->
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-head grid-bg">
+      <div class="container page-head-inner">
+        <div>
+          <p class="eyebrow">Modular origami</p>
+          <h1>Simple units.<br><span style="color: var(--blue)">Strong structures.</span></h1>
+          <p class="lede">
+            I fold polyhedra, kusudama and tessellations from many identical paper units.
+            No glue and no cuts: every piece is held in place by folds and tension alone.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.instagram.com/jasenzhangorigami" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a class="btn btn-ghost" href="https://www.tiktok.com/@jasenzhangorigami" target="_blank" rel="noopener">
+              <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+          </div>
+        </div>
+
+        <!-- 16 folded squares that assemble into a diamond, inner ring first -->
+        <div class="hero-art" aria-hidden="true">
+          <span class="tile corner" style="--r:0deg;   --i:12"></span>
+          <span class="tile edge"   style="--r:0deg;   --i:4"></span>
+          <span class="tile edge"   style="--r:90deg;  --i:5"></span>
+          <span class="tile corner" style="--r:90deg;  --i:13"></span>
+
+          <span class="tile edge"   style="--r:0deg;   --i:11"></span>
+          <span class="tile inner"  style="--r:0deg;   --i:0"></span>
+          <span class="tile inner"  style="--r:90deg;  --i:1"></span>
+          <span class="tile edge"   style="--r:90deg;  --i:6"></span>
+
+          <span class="tile edge"   style="--r:270deg; --i:10"></span>
+          <span class="tile inner"  style="--r:270deg; --i:3"></span>
+          <span class="tile inner"  style="--r:180deg; --i:2"></span>
+          <span class="tile edge"   style="--r:180deg; --i:7"></span>
+
+          <span class="tile corner" style="--r:270deg; --i:15"></span>
+          <span class="tile edge"   style="--r:270deg; --i:9"></span>
+          <span class="tile edge"   style="--r:180deg; --i:8"></span>
+          <span class="tile corner" style="--r:180deg; --i:14"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery: edit data/origami.json -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2>Recent folds</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter models"></div>
+        </div>
+
+        <div class="grid" data-src="data/origami.json">
+          <div class="grid-sizer"></div>
+          <div class="gutter-sizer"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: built by js/footer.js -->
+  <footer id="site-footer"></footer>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

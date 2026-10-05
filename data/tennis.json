@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Match play",
+    "description": "Replace with a YouTube video ID in \"youtube\", or a local file in \"video\".",
+    "category": "Videos",
+    "type": "video"
+  },
+  {
+    "title": "Tournament photo",
+    "category": "Tournaments",
+    "image": "images/tennis-placeholder.svg"
+  },
+  {
+    "title": "With players",
+    "category": "With players",
+    "image": "images/tennis-placeholder.svg"
+  },
+  {
+    "title": "Practice session",
+    "category": "Videos",
+    "type": "video"
+  },
+  {
+    "title": "Tournament photo",
+    "category": "Tournaments",
+    "image": "images/tennis-placeholder.svg"
+  }
+]

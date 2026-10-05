@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .nav-toggle { display: inline-flex; }
   .nav-links {
     display: none;

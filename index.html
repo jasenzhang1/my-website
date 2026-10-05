@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasen Zhang</title>
+  <meta name="description" content="Modular origami and Mathlingo, a repetition-first math learning app.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- HEADER: built by js/header.js -->
+  <header id="site-header"></header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Math &middot; Origami &middot; Software</p>
+          <h1>Simple units.<br><span class="accent">Strong structures.</span></h1>
+          <p class="lede">
+            I fold modular origami from dozens of identical pieces, and I'm building
+            <strong>Mathlingo</strong>, an app that turns small daily reps into real
+            confidence in math.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">See my work <i class="fa-solid fa-arrow-down"></i></a>
+            <a class="btn btn-ghost" href="about.html">About me</a>
+          </div>
+        </div>
+
+        <!-- 16 folded squares that assemble into a diamond, inner ring first -->
+        <div class="hero-art" aria-hidden="true">
+          <span class="tile corner" style="--r:0deg;   --i:12"></span>
+          <span class="tile edge"   style="--r:0deg;   --i:4"></span>
+          <span class="tile edge"   style="--r:90deg;  --i:5"></span>
+          <span class="tile corner" style="--r:90deg;  --i:13"></span>
+
+          <span class="tile edge"   style="--r:0deg;   --i:11"></span>
+          <span class="tile inner"  style="--r:0deg;   --i:0"></span>
+          <span class="tile inner"  style="--r:90deg;  --i:1"></span>
+          <span class="tile edge"   style="--r:90deg;  --i:6"></span>
+
+          <span class="tile edge"   style="--r:270deg; --i:10"></span>
+          <span class="tile inner"  style="--r:270deg; --i:3"></span>
+          <span class="tile inner"  style="--r:180deg; --i:2"></span>
+          <span class="tile edge"   style="--r:180deg; --i:7"></span>
+
+          <span class="tile corner" style="--r:270deg; --i:15"></span>
+          <span class="tile edge"   style="--r:270deg; --i:9"></span>
+          <span class="tile edge"   style="--r:180deg; --i:8"></span>
+          <span class="tile corner" style="--r:180deg; --i:14"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Two main things ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">What I make</p>
+            <h2>Two projects, one idea.</h2>
+            <p>Both start with a small piece you repeat until it becomes something solid.</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <a class="feature" href="#work" data-filter-link=".origami">
+            <span class="feature-icon"><i class="fa-solid fa-cubes"></i></span>
+            <h3>Modular Origami</h3>
+            <p>
+              Polyhedra and kusudama made from identical folded units, held together only
+              by tension. No glue and no cuts, just geometry.
+            </p>
+            <ul class="chips">
+              <li class="chip">Sonobe</li>
+              <li class="chip">Kusudama</li>
+              <li class="chip">Polyhedra</li>
+            </ul>
+            <div class="feature-foot">
+              <span class="go">Browse the gallery <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="units" aria-hidden="true">
+                <span class="unit on"></span><span class="unit on"></span><span class="unit on"></span>
+                <span class="unit"></span><span class="unit"></span><span class="unit"></span>
+              </span>
+            </div>
+          </a>
+
+          <a class="feature feature--bold" href="#work" data-filter-link=".apps">
+            <span class="feature-icon"><i class="fa-solid fa-bolt"></i></span>
+            <h3>Mathlingo</h3>
+            <p>
+              Short, focused practice built on spaced repetition. Every rep counts, every
+              streak shows, and confidence builds one problem at a time.
+            </p>
+            <ul class="chips">
+              <li class="chip">Spaced repetition</li>
+              <li class="chip">Daily streaks</li>
+              <li class="chip">Progress tracking</li>
+            </ul>
+            <div class="feature-foot">
+              <span class="go">See the app <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="units" aria-hidden="true">
+                <span class="unit on"></span><span class="unit on"></span><span class="unit on"></span>
+                <span class="unit on"></span><span class="unit on"></span><span class="unit on"></span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Project mosaic (data/cards.json) ===== -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Work</p>
+            <h2>Projects</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter-btn is-active" data-filter="*" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter=".origami" aria-pressed="false">Origami</button>
+            <button class="filter-btn" data-filter=".apps" aria-pressed="false">Apps</button>
+            <button class="filter-btn" data-filter=".other" aria-pressed="false">Other</button>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <div class="gutter-sizer"></div>
+          <!-- cards are inserted here by js/portfolio.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: built by js/footer.js -->
+  <footer id="site-footer"></footer>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

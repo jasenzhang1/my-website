@@ -1,0 +1,82 @@
+/* ---------- Filter bar ---------- */
+.filters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  background: var(--white);
+  border: 1px solid var(--steel-100);
+  border-radius: 12px;
+}
+.filter-btn {
+  border: 0;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--steel-700);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.filter-btn:hover { background: var(--steel-50); color: var(--ink); }
+.filter-btn.is-active { background: var(--blue); color: var(--white); }
+
+/* ---------- Masonry grid (Isotope) ---------- */
+.grid-sizer, .card { width: 32%; }
+.gutter-sizer { width: 2%; }
+
+.card {
+  margin-bottom: 20px;
+  background: var(--white);
+  border: 1px solid var(--steel-100);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.card:hover { border-color: var(--blue-300); box-shadow: var(--shadow-md); }
+
+.card-link { display: block; color: inherit; }
+.card-link:hover { color: inherit; }
+
+.card-media {
+  overflow: hidden;
+  background: var(--steel-50);
+  border-bottom: 1px solid var(--steel-100);
+}
+.card-media img { width: 100%; height: auto; transition: transform 0.5s var(--ease); }
+.card:hover .card-media img { transform: scale(1.03); }
+
+.card-body { padding: 18px 20px 20px; }
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  color: var(--steel-500);
+}
+.card-tag { font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); }
+.card h3 { display: flex; justify-content: space-between; gap: 12px; margin: 0 0 6px; }
+.card h3 i {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--steel-300);
+  transform: rotate(-45deg);
+  transition: color 0.2s, transform 0.2s var(--ease);
+}
+.card:hover h3 i { color: var(--blue); transform: rotate(-45deg) translateX(3px); }
+.card p { margin: 0; font-size: 0.93rem; color: var(--steel-700); }
+
+.grid-note { padding: 24px 0; color: var(--steel-500); }
+
+@media (max-width: 900px) {
+  .grid-sizer, .card { width: 49%; }
+}
+@media (max-width: 600px) {
+  .grid-sizer, .card { width: 100%; }
+  .gutter-sizer { width: 0; }
+  .filters { display: flex; }
+  .filter-btn { flex: 1; padding: 8px 10px; }
+}

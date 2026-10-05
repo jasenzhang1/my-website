@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#f6f8fb"/>
+  <!-- isometric cube; each face split along a fold line like a sonobe unit -->
+  <polygon points="300,140 440,220 300,300 160,220" fill="#eaf0ff"/>
+  <polygon points="300,140 440,220 300,220" fill="#8aa9ff"/>
+  <polygon points="160,220 300,300 300,460 160,380" fill="#1d5bff"/>
+  <polygon points="160,220 300,300 230,340" fill="#1546c9"/>
+  <polygon points="300,300 440,220 440,380 300,460" fill="#a9b4c2"/>
+  <polygon points="440,380 300,460 370,340" fill="#6b7a8d"/>
+  <g fill="none" stroke="#fff" stroke-width="2" opacity="0.7">
+    <polyline points="160,220 300,140 440,220 440,380 300,460 160,380 160,220"/>
+    <polyline points="160,220 300,300 440,220"/><line x1="300" y1="300" x2="300" y2="460"/>
+  </g>
+</svg>

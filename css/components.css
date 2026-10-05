@@ -1,0 +1,55 @@
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s var(--ease);
+}
+.btn:active { transform: translateY(1px); }
+
+.btn-primary { background: var(--blue); color: var(--white); }
+.btn-primary:hover { background: var(--blue-600); color: var(--white); }
+
+.btn-ghost { background: var(--white); border-color: var(--steel-100); color: var(--ink); }
+.btn-ghost:hover { border-color: var(--steel-300); color: var(--ink); }
+
+.btn-sm { padding: 8px 14px; font-size: 0.875rem; }
+
+/* ---------- Small labels ---------- */
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--steel-500);
+  margin-bottom: 16px;
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.chip {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--steel-100);
+  color: var(--steel-700);
+  background: var(--white);
+}
+
+/* A row of square "units" — a modular progress motif */
+.units { display: flex; gap: 5px; }
+.unit {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: var(--steel-100);
+}
+.unit.on { background: var(--blue); }

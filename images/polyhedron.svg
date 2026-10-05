@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560">
+  <rect width="600" height="560" fill="#f6f8fb"/>
+  <!-- hexagon of six triangle units -->
+  <g stroke="#fff" stroke-width="3" stroke-linejoin="round">
+    <polygon points="300,280 480,280 390,124" fill="#8aa9ff"/>
+    <polygon points="300,280 390,124 210,124" fill="#1d5bff"/>
+    <polygon points="300,280 210,124 120,280" fill="#1546c9"/>
+    <polygon points="300,280 120,280 210,436" fill="#6b7a8d"/>
+    <polygon points="300,280 210,436 390,436" fill="#a9b4c2"/>
+    <polygon points="300,280 390,436 480,280" fill="#dfe4eb"/>
+  </g>
+</svg>

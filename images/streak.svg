@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 384">
+  <defs>
+    <pattern id="steel" width="48" height="48" patternUnits="userSpaceOnUse">
+      <rect x="4" y="4" width="40" height="40" rx="6" fill="#a9b4c2"/>
+    </pattern>
+    <pattern id="blue" width="48" height="48" patternUnits="userSpaceOnUse">
+      <rect x="4" y="4" width="40" height="40" rx="6" fill="#1d5bff"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="384" fill="#fff"/>
+  <!-- each day stacks one more block: repetition builds height -->
+  <rect x="48"  y="288" width="48" height="48"  fill="url(#steel)"/>
+  <rect x="144" y="240" width="48" height="96"  fill="url(#steel)"/>
+  <rect x="240" y="192" width="48" height="144" fill="url(#steel)"/>
+  <rect x="336" y="144" width="48" height="192" fill="url(#steel)"/>
+  <rect x="432" y="96"  width="48" height="240" fill="url(#steel)"/>
+  <rect x="528" y="48"  width="48" height="288" fill="url(#blue)"/>
+  <line x1="24" y1="342" x2="588" y2="342" stroke="#dfe4eb" stroke-width="2"/>
+</svg>

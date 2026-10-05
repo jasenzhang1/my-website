@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2463"/>
+      <stop offset="0.6" stop-color="#1546c9"/>
+      <stop offset="1" stop-color="#1d5bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="440" fill="url(#bg)"/>
+  <g fill="#fff" opacity="0.08">
+    <rect x="40" y="40" width="40" height="40" rx="6"/><rect x="88" y="40" width="40" height="40" rx="6"/>
+    <rect x="40" y="88" width="40" height="40" rx="6"/><rect x="520" y="320" width="40" height="40" rx="6"/>
+    <rect x="472" y="360" width="40" height="40" rx="6"/><rect x="520" y="368" width="40" height="40" rx="6"/>
+  </g>
+  <rect x="190" y="50" width="220" height="360" rx="28" fill="#fff"/>
+  <g fill="#1d5bff"><rect x="214" y="78" width="18" height="18" rx="4"/><rect x="238" y="78" width="18" height="18" rx="4"/><rect x="262" y="78" width="18" height="18" rx="4"/><rect x="286" y="78" width="18" height="18" rx="4"/></g>
+  <g fill="#dfe4eb"><rect x="310" y="78" width="18" height="18" rx="4"/><rect x="334" y="78" width="18" height="18" rx="4"/><rect x="358" y="78" width="18" height="18" rx="4"/></g>
+  <text x="300" y="190" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="700" font-size="52" fill="#0e1726">7 × 8</text>
+  <rect x="214" y="230" width="172" height="44" rx="10" fill="#fff" stroke="#dfe4eb" stroke-width="2"/>
+  <text x="300" y="259" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#3d4a5c">54</text>
+  <rect x="214" y="284" width="172" height="44" rx="10" fill="#1d5bff"/>
+  <text x="300" y="313" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#fff">56 ✓</text>
+  <rect x="214" y="338" width="172" height="44" rx="10" fill="#fff" stroke="#dfe4eb" stroke-width="2"/>
+  <text x="300" y="367" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#3d4a5c">58</text>
+</svg>
